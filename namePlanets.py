@@ -1,0 +1,15 @@
+import cv2
+
+planets = cv2.imread('C:/Users/ayush/OneDrive/Desktop/pythonWHJR/class104/PRO-104-Project-Image-main/solar-system.jpg')
+cv2.putText(planets, "Sun", (100,80), cv2.FONT_HERSHEY_TRIPLEX, 2, (0, 0, 255))
+cv2.putText(planets, "Mercury", (110,180), cv2.FONT_HERSHEY_TRIPLEX, 0.5, (110, 110, 110))
+cv2.putText(planets, "Venus", (205,280), cv2.FONT_HERSHEY_TRIPLEX, 0.5, (30, 120, 180))
+cv2.putText(planets, "Earth", (300,280), cv2.FONT_HERSHEY_TRIPLEX, 0.5, (190, 120, 40))
+cv2.putText(planets, "Mars", (400,280), cv2.FONT_HERSHEY_TRIPLEX, 0.5, (80, 100, 150))
+cv2.putText(planets, "Jupiter", (500,80), cv2.FONT_HERSHEY_TRIPLEX, 0.5, (72, 100, 145))
+cv2.putText(planets, "Saturn", (720,120), cv2.FONT_HERSHEY_TRIPLEX, 0.5, (240, 240, 255))
+cv2.putText(planets, "Uranus", (950,140), cv2.FONT_HERSHEY_TRIPLEX, 0.5, (255, 255, 255))
+cv2.putText(planets, "Neptune", (1080,140), cv2.FONT_HERSHEY_TRIPLEX, 0.5, (255, 0, 0))
+cv2.imshow("The Planets", planets)
+cv2.waitKey(0)
+cv2.imwrite("The_Planets.jpg", planets)
